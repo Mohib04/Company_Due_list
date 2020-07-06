@@ -13,6 +13,9 @@ app.get('/m', (req, res) => {
 app.get('/', (req, res) => {
     return res.send("Welcome to Bismillah Auto Solution");
 });
+app.get('/signin', (req, res) => {
+    return res.send("Please Sign In first")
+})
 app.get('/signup', (req, res) => {
     return res.send("This is signup Page");
 });

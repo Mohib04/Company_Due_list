@@ -1,18 +1,19 @@
 {
-  "name": "testback",
-  "version": "1.0.0",
-  "description": "Bismillah Automatic sms system",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "mohib"
-  ],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  }
+    "name": "testback",
+    "version": "1.0.0",
+    "description": "Bismillah Automatic sms system",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "keywords": [
+        "mohib"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4"
+    }
 }
