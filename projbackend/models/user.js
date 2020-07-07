@@ -45,18 +45,18 @@ userSchema.virtual("password")
         this.salt = uuidv1();
         this.encry_password = this.securePassword(password);
     })
-    .get(function {
+    .get(function() {
         return this._password
     })
 
-userSchema.methord = {
+userSchema.methords = {
 
     authenticate: function(plainpassword) {
         return this.securePassword(plainpassword) == this.encry_password
     },
 
     securePassword: function(plainpassword) {
-        if (!password) return "";
+        if (!plainpassword) return "";
         try {
             return crypto.createHmac('sha256', this.salt)
                 .update(plainpassword)

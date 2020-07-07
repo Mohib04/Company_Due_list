@@ -15,6 +15,8 @@ mongoose.connect(process.env.DATABASE, {
 }).then(() => {
     console.log("BD CONNECTED");
 });
+
+
 //MY ROUTES
 app.use("/api", authRoutes);
 
