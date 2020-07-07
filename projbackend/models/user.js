@@ -45,7 +45,7 @@ userSchema.virtual("password")
         this.salt = uuidv1();
         this.encry_password = this.securePassword(password);
     })
-    .get(function() {
+    .get(function(password) {
         return this._password
     })
 
